@@ -1,0 +1,173 @@
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #b48c42;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: auto;
+  margin: auto;
+  font-family: Constanti;
+}
+.YoimiyaIntro {
+  background-image: url("Content/yoimiyabanner.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  max-width: 100%;
+  height: 400px;
+  background-position: center;
+}
+.backbtn {
+  text-align: end;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+.introInfo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+.introInfo img {
+  width: 50px;
+}
+
+@keyframes wepdisplay {
+  0% {
+  }
+
+  100% {
+    width: 20%;
+    padding-bottom: 50px;
+  }
+}
+@font-face {
+  font-family: "Constanti";
+  src: url("Fonts/cambria/Cambria.ttf");
+}
+
+.recWeps h2 {
+  text-align: center;
+}
+.bgcontainer {
+  background-image: url("Content/Background_Item_5_Star_waifu2x_art_noise1_scale_tta_1.png");
+  background-size: cover;
+  background-position: center;
+  display: flexbox;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.harpContainer img {
+  width: 10%;
+}
+
+.harpContainer:hover img {
+  position: relative;
+  animation-name: wepdisplay;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+
+.Talents {
+  text-align: center;
+  display: flexbox;
+}
+
+#borderimg {
+  display: flexbox;
+  vertical-align: top;
+  width: 50%;
+  height: 100px;
+}
+.Talents p,
+h3 {
+  text-align: center;
+  padding: 20px;
+}
+.Talents img {
+  padding-top: 20px;
+}
+.teamcomps {
+  display: flexbox;
+  text-align: center;
+}
+.teamcomps img {
+  padding: 20px;
+  margin: auto;
+}
+.elements {
+  display: flex;
+  justify-content: center;
+}
+.elements img {
+  width: 50%;
+  padding: 5%;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: smaller;
+  }
+  .YoimiyaIntro {
+    max-width: 100%;
+    height: 200px;
+  }
+  .introInfo img {
+    width: 30px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: large;
+  }
+  .YoimiyaIntro {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .introInfo img {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: large;
+  }
+  .YoimiyaIntro {
+    max-width: 100%;
+    height: 300px;
+  }
+  .introInfo img {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: larger;
+  }
+  .YoimiyaIntro {
+    max-width: 100%;
+    height: 400px;
+  }
+  .introInfo img {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: larger;
+  }
+  .YoimiyaIntro {
+    max-width: 100%;
+    height: 500px;
+  }
+  .introInfo img {
+    width: 50px;
+  }
+}

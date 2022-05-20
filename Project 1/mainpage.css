@@ -1,0 +1,121 @@
+body {
+  background-image: url("StarfallBackgrounds/01.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: Constanti;
+}
+@font-face {
+  font-family: "Constanti";
+  src: url("Fonts/cambria/Cambria.ttf");
+}
+
+@keyframes cardanimation {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.gameTitle img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: auto;
+}
+
+#mainheader {
+  text-align: center;
+  color: white;
+  padding-bottom: 50px;
+}
+#prompt {
+  text-align: center;
+  color: white;
+  padding-bottom: 50px;
+}
+.charactercards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.charactercards img {
+  max-width: 100%;
+  height: auto;
+}
+.baal:hover,
+.ganyu:hover,
+.childe:hover,
+.yoimiya:hover {
+  position: relative;
+  animation-name: cardanimation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: small;
+    background-size: cover;
+  }
+  .charactercards {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .charactercards img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .charactercards {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+  .charactercards img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .charactercards {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+  .charactercards img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .charactercards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+  }
+  .charactercards img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: larger;
+  }
+  .charactercards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+  }
+  .charactercards img {
+    max-width: 100%;
+    height: auto;
+  }
+}
